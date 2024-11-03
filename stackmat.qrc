@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>res/background.jpg</file>
+        <file>res/icone.bmp</file>
+        <file>res/icone.ico</file>
+        <file>res/hand-left.png</file>
+        <file>res/hand-left-off.png</file>
+        <file>res/hand-right.png</file>
+        <file>res/hand-right-off.png</file>
+        <file>res/interrogation.png</file>
+        <file>res/reset.png</file>
+        <file>res/voyant_rouge_off.png</file>
+        <file>res/voyant_rouge_on.png</file>
+        <file>res/voyant_vert_off.png</file>
+        <file>res/voyant_vert_on.png</file>
+    </qresource>
+</RCC>
