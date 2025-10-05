@@ -1,9 +1,9 @@
 #ifndef LCDNUMBER_STACKMAT_H
 #define LCDNUMBER_STACKMAT_H
 
-#include <QTime>
 
 #include <QtWidgets/QLCDNumber>
+#include <QElapsedTimer>
 
 class LCDNumber_Stackmat : public QLCDNumber
 {
@@ -11,12 +11,12 @@ public:
     LCDNumber_Stackmat(QWidget * parent = 0);
 
     void saveTime();
-    QTime getTime();
+    QElapsedTimer getTime();
 
-    QTime    _timer;
+    QElapsedTimer    _timer;
 
 private :
-    QTime     _finalTime;
+    QElapsedTimer     _finalTime;
 };
 
 #endif // LCDNUMBER_STACKMAT_H

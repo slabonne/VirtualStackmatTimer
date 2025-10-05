@@ -11,7 +11,7 @@ void LCDNumber_Stackmat::saveTime()
     _finalTime = _timer;
 }
 
-QTime LCDNumber_Stackmat::getTime()
+QElapsedTimer LCDNumber_Stackmat::getTime()
 {
     return _finalTime;
 }

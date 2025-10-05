@@ -1,4 +1,4 @@
-QT += opengl gui network xml
+QT += opengl gui network xml widgets
 
 SOURCES += src/main.cpp \
     src/mainwindow.cpp \

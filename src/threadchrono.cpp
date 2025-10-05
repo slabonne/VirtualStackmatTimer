@@ -8,7 +8,7 @@ ThreadChrono::ThreadChrono(MainWindow * parent)
 
 void ThreadChrono::run()
 {
-    QTime _TimeStart;
+    QElapsedTimer _TimeStart;
     _TimeStart.start();
     _mainWindow->switchVoyants(1);
 
@@ -30,7 +30,7 @@ ThreadWait::ThreadWait(MainWindow * parent)
 
 void ThreadWait::run()
 {
-   QTime _TimeStart;
+   QElapsedTimer _TimeStart;
     _TimeStart.start();
     while (_TimeStart.elapsed() < 1000)
     {

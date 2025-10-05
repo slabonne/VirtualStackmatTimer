@@ -484,10 +484,10 @@ void MainWindow::saveScores(QString filename)
      {
         for (std::list<Essai>::const_iterator itEssai = it->second.begin(); itEssai != it->second.end(); itEssai++)
         {
-            out << it->first << endl;
-            out << itEssai->_pseudo << endl;
-            out << QString::number(itEssai->_temps) << endl;
-            out << itEssai->_date << endl;
+            out << it->first << Qt::endl;
+            out << itEssai->_pseudo << Qt::endl;
+            out << QString::number(itEssai->_temps) << Qt::endl;
+            out << itEssai->_date << Qt::endl;
         }
      }
 
@@ -766,8 +766,8 @@ void MainWindow::setRunningState()
 {
     _STATE = _RUNNING_;
 
-    _LCDNumber_Stackmat->_timer.setHMS(0,0,0);
-    _LCDNumber_Stackmat->_timer.start();
+    _LCDNumber_Stackmat->_timer.restart();
+
 
     grabKeyboard();
     _threadChrono->start();
