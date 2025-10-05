@@ -19,7 +19,7 @@ HelpClass::HelpClass()
     aLabel->setFont(aFont);
     vert_layout1->addWidget(aLabel);
 
-    QLabel * aLabel3 = new QLabel("v1.2");
+    QLabel * aLabel3 = new QLabel("v"+___VERSION___);
     aLabel3->setAlignment(Qt::AlignHCenter);
     vert_layout1->addWidget(aLabel3);
 
